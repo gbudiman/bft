@@ -9,10 +9,10 @@ describe Scrapper do
 	it { is_expected.to respond_to :index }
 
 	context 'debugging utility' do
-		it 'should allow singular unit ID query' do
-			@scrapper.debug 171
-			expect(@scrapper.unit_table[171]).not_to be nil
-		end
+		# it 'should allow singular unit ID query' do
+		# 	@scrapper.debug 171
+		# 	expect(@scrapper.unit_table[171]).not_to be nil
+		# end
 
 		it 'should allow multiple unit ID query' do
 			@scrapper.debug *5..8, 339
